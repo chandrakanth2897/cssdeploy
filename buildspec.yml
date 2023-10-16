@@ -5,9 +5,9 @@ phases:
   install:
     runtime-versions:
       nodejs: 14
-  build:
-    commands:
-      - aws s3 sync ./build/ s3://chandukani
+build:
+  commands:
+    - aws s3 sync ./build/ s3://chandukani
 
 artifacts:
   files: '**/*'
